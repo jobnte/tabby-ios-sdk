@@ -59,9 +59,9 @@ public final class TabbySDK {
     }
 }
 
-@available(iOS 14.0, *)
+@available(iOS 13.0, *)
 public struct TabbyCheckout: View {
-    @StateObject var checkout = TabbyCheckoutViewModel()
+    @ObservedObject var checkout = TabbyCheckoutViewModel()
     
     public var productType: TabbyProductType
     public var onResult: (TabbyResult) -> ()
